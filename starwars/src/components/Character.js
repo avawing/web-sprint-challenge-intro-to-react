@@ -2,8 +2,9 @@
 import React, {useState} from 'react';
 import {
     Card, CardText, CardBody,
-    CardTitle, CardSubtitle, Button, Fade
+    CardTitle, CardSubtitle, Button, 
   } from 'reactstrap';
+import Stats from './Stats'
 
 function Character(props){
     const {data, bounty} = props
@@ -19,13 +20,7 @@ function Character(props){
               <CardTitle>{data.name}</CardTitle>
               <CardSubtitle>{bounty} Credits</CardSubtitle>
               <CardText>
-                  <Fade in={fadeIn} tag="h5">
-                  gender: {data.gender}<br />
-                  hair color: {data.hair_color}<br />
-                  height: {data.height}<br />
-                  mass: {data.mass}<br />
-                  skin color: {data.skin_color}
-                  </Fade>
+                  <Stats data = {data} fadeIn = {fadeIn}/>
                   <Button color="danger" onClick={toggle}>Bounty Information</Button>
                   </CardText>
             </CardBody>

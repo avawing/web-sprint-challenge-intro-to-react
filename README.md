@@ -98,7 +98,7 @@ After finishing your required elements, you can push your work further. These go
 - [ ] Make the Character component more complex and break it into several subcomponents.
 - [ ] Create a helper function in separate module to remove unneeded information from the API data, before putting it in state.
 - [ ] Use Promise.all to resolve an array of promises.
-- [ ] Create transitions or animations with styled-components.
+- [x] Create transitions or animations with styled-components.
 
 ## Submission format
 
