@@ -4,12 +4,10 @@ import {Fade} from 'reactstrap'
 function Stats(props){
     const {data, fadeIn} = props
 return(
-<Fade in={fadeIn} tag="h5" fontWeight = 'strong'>
-    gender: {data.gender}<br />
-    hair color: {data.hair_color}<br />
-    height: {data.height}<br />
-    mass: {data.mass}<br />
-    skin color: {data.skin_color}
+<Fade in={fadeIn} tag="h5">
+    {data.name} is {data.gender}, {data.height}cm and has {data.mass}kg of mass. <br/>
+    Approach with Caution.<br />
+    They are considered to be armed <br />
 </Fade>
 )}
 
