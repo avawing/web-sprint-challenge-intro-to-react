@@ -4,7 +4,7 @@ import {Fade} from 'reactstrap'
 function Stats(props){
     const {data, fadeIn} = props
 return(
-<Fade in={fadeIn} tag="h5">
+<Fade in={fadeIn} tag="h5" fontWeight = 'strong'>
     gender: {data.gender}<br />
     hair color: {data.hair_color}<br />
     height: {data.height}<br />

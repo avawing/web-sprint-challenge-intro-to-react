@@ -18,7 +18,7 @@ function Character(props){
           <Card>
             <CardBody>
               <CardTitle>{data.name}</CardTitle>
-              <CardSubtitle>{bounty} Credits</CardSubtitle>
+              <CardSubtitle>{bounty} credits</CardSubtitle>
               <CardText>
                   <Stats data = {data} fadeIn = {fadeIn}/>
                   <Button color="danger" onClick={toggle}>Bounty Information</Button>
