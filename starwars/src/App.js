@@ -26,9 +26,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <h1 className="Header">Bounty List</h1>
    {data.map(item => {
-     return <Character key = {data.url} data = {item}/>
+     return <Character key = {data.url} data = {item} bounty = {Math.floor(Math.random()*10000000)}/>
    })}
    
     </div>
